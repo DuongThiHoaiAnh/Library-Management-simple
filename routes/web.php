@@ -258,7 +258,7 @@ Route::prefix('user')->middleware(['auth'])->group(function () {
     Route::get('/help-user', [HelpController::class, 'index'])->name('user.help');
 });
 
-
+//deploy-ing
 
 use CloudinaryLabs\CloudinaryLaravel\Facades\Cloudinary;
 
@@ -281,6 +281,18 @@ Route::get('/test-cloudinary', function () {
         ]);
     }
 });
+
+use Illuminate\Support\Facades\Artisan;
+
+Route::get('/add-migra', function () {
+    try {
+        Artisan::call('migrate', ['--force' => true]);
+        return "Migration chạy xong!";
+    } catch (\Exception $e) {
+        return "Lỗi khi chạy migration: " . $e->getMessage();
+    }
+});
+
 
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
@@ -310,18 +322,6 @@ Route::get('/seed-admin', function () {
 //            config('database.connections.mysql.username');
 // });
 
-use Illuminate\Support\Facades\Artisan;
-
-Route::get('/add-migra', function () {
-    try {
-        Artisan::call('migrate', ['--force' => true]);
-        return "Migration chạy xong!";
-    } catch (\Exception $e) {
-        return "Lỗi khi chạy migration: " . $e->getMessage();
-    }
-});
-
-
 use App\Http\Controllers\ChatController;
 
 Route::get('partials/chat', [ChatController::class, 'index']);
@@ -349,7 +349,6 @@ Route::get('/test-ai', function () {
         ]
     );
 
-    // Nếu lỗi HTTP
     if (!$response->successful()) {
         return response()->json([
             'error' => 'HTTP error',
@@ -360,7 +359,6 @@ Route::get('/test-ai', function () {
 
     $data = $response->json();
 
-    // Nếu Gemini không trả nội dung
     if (!isset($data['candidates'][0]['content']['parts'][0]['text'])) {
         return response()->json([
             'error' => 'Gemini không phản hồi',
