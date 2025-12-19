@@ -97,6 +97,7 @@ class BookController extends Controller
                 $book->anhBia = 'images/' . $fileName;
             }
 
+            
 
 
             $book->save();
