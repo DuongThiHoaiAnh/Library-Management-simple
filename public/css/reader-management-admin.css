@@ -1,0 +1,248 @@
+/* tổng thể*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+}
+
+/* Tổng thể bảng */
+.dashboard-content {
+  padding: 30px 60px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Nút xuất độc giả */
+.btn-export-reader {
+  background-color: #f39645;
+  color: white;
+  border: none;
+  font-size: 16px;
+  padding: 15px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn-export-reader:hover {
+  opacity: 0.9;
+  background: #fff6e6;
+  color: #e69215;
+  transform: scale(1.04);
+}
+
+/* mấy khung thống kê */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #c7c7c7;
+  border-radius: 12px;
+  padding: 20px 24px;
+  width: 245px;
+  height: 133px;
+}
+
+.card .label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.icon-box.green {
+  background: #3bb273;
+}
+
+
+/* Container tổng khung tìm kiếm */
+.reader-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+
+  margin: 6px auto;
+  border: 1px solid #cfcfcf;
+  padding: 25px 30px;
+  width: 1155px;
+  height: 91px;
+}
+
+/* Ô tìm kiếm */
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 380px;
+  height: 42px;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 15px;
+  padding: 8px 15px;
+  color: #000000;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+  margin-left: 10px;
+}
+
+/* Bảng sach */
+.table-wrapper {
+  width: 1155px;
+  margin: 20px auto;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.reader-table {
+  table-layout: auto;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+.reader-table thead {
+  background-color: #F1F1F1;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.reader-table th,
+.reader-table td {
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left;
+  padding: 14px 16px;
+}
+
+.reader-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.reader-table th {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.reader-table th:last-child {
+  border-top: none;
+}
+
+.reader-table tbody tr {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.reader-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.reader-table td:nth-last-child(-n+3),
+.reader-table th:nth-last-child(-n+3) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.reader-table th:nth-child(2),
+.reader-table td:nth-child(2) {
+  width: 18%;
+  padding-right: 8px;
+}
+
+.reader-table th:nth-child(3),
+.reader-table td:nth-child(3) {
+  width: 20%;
+}
+
+
+
+.actions {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+}
+
+/* nút reset */
+.reset-icon {
+  width: 23px;
+  color: #f43434;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: 10px;
+}
+
+.reset-icon:hover {
+  color: #d20505;
+  transform: scale(1.1);
+}

@@ -1,0 +1,80 @@
+/* Body */
+
+/* Start: dòng 121 */
+.trang-lch-s-mn-tr .rectangle-6 {
+  background: none;
+}
+.trang-lch-s-mn-tr .rectangle-6:hover {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.trang-lch-s-mn-tr .rectangle-7 {
+  background: linear-gradient(
+    90deg,
+    rgba(81, 65, 255, 1) 0%,
+    rgba(185, 81, 254, 1) 62%,
+    rgba(248, 47, 255, 1) 100%
+  );
+}
+.trang-lch-s-mn-tr .text-wrapper-6 {
+  font-family: "Inter-Bold", Helvetica;  
+  font-weight: 700;
+  color: #ffffff;
+}
+.trang-lch-s-mn-tr .text-wrapper-5 {
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #6f27f4;
+}
+.trang-lch-s-mn-tr .iconstack-io {
+  left: 22px;
+}
+.trang-lch-s-mn-tr .iconstack-io-book-2 {
+  left: 22px;
+}
+/* Start: dòng 138 */
+
+.trang-lch-s-mn-tr .rectangle-het-han {
+  left: 735px;
+  width: 100px;
+  background-color: #e7e7e7;
+}
+.trang-lch-s-mn-tr .rectangle-dang-muon {
+  left: 690px;
+  width: 145px;
+  background-color: #ffd7d7;
+}
+.trang-lch-s-mn-tr .rectangle-dang-cho {
+  left: 704px;
+  width: 129px;
+  background-color: #f9ffc0;
+}
+.trang-lch-s-mn-tr .text-wrapper-11 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0;
+  white-space: nowrap;
+  z-index: 1;
+  height: 33px;
+  font-family: "Inter-Regular", Helvetica;
+  font-weight: 400;
+  color: #6a6a6a;
+  font-size: 22px;
+  line-height: 33px;
+  top: 8.2rem;
+  left: 520px;
+}
+.trang-lch-s-mn-tr .het-han {
+    left: 746px;
+    color: black;
+}
+.trang-lch-s-mn-tr .dang-muon {
+    left: 728px;
+    color: #d00000;
+}
+.trang-lch-s-mn-tr .dang-cho {
+    left: 718px;
+    color: #b6a500;
+}

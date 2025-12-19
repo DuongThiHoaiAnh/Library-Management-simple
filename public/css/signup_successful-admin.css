@@ -1,0 +1,122 @@
+/* ======== Tổng thể ======== */
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background: #FFE8D4;
+  overflow: hidden;
+  min-width: 1440px;
+}
+
+/* ======== Sign up successful ======== */
+.success-box {
+  width: 824px;
+  height: 406px;
+  position: relative;
+  margin: 200px auto;
+}
+
+.success-bg {
+  width: 824px;
+  height: 532px;
+  left: 0px;
+  top: 0px;
+  position: absolute;
+  background: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: 1px #DFDFDF solid;
+}
+
+.success-text {
+  width: 638px;
+  height: 45px;
+  left: 93px;
+  top: 253px;
+  position: absolute;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: #EB9E38;
+  font-size: 39px;
+  font-family: Inter, sans-serif;
+  font-weight: 700;
+  line-height: 58.5px;
+  word-wrap: break-word;
+}
+
+.success-circle {
+  width: 116px;
+  height: 116px;
+  left: 354px;
+  top: 48px;
+  position: absolute;
+  background: #D7FFCE;
+  border-radius: 9999px;
+}
+
+.avatar {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 20px;
+  position: relative;
+}
+
+.avatar-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2; 
+}
+
+.avatar-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* nút trở lại */
+.btn-comeback {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 518px;
+  height: 60px;
+  background: #f39645;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 29px;
+  font-weight: 700;
+  cursor: pointer;
+  position: absolute;
+  top: 390px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-decoration: none; 
+  transition: background 0.3s, transform 0.1s;
+}
+
+.btn-comeback:hover {
+  background: #e07c1a;
+  transform: translateX(-50%) translateY(-2px);
+}
+
+.btn-comeback:active {
+  transform: translateX(-50%) translateY(1px);
+}

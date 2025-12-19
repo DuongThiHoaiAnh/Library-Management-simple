@@ -1,0 +1,150 @@
+/* ======== Header ======== */
+.header {
+  width: 100%;
+  height: 119px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+  box-sizing: border-box;
+  z-index: 2;
+  font-family: Inter, sans-serif;
+}
+
+.max-header {
+  width: 100%;
+  display: flex;
+}
+.header-left,
+.header-right {
+  height: 119px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header-left {
+  width: 75%;
+}
+.header-right {
+  width: 25%;
+  justify-content: right;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;  
+  color: inherit;         
+  cursor: pointer;        
+}
+
+.logo:hover {
+  opacity: 0.9;           
+}
+
+.logo-icon {
+  width: 67px;
+  height: 75px;
+  border-radius: 3px;
+}
+
+.logo-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain; 
+}
+
+.logo-text {
+  color: #660095;
+  font-family: "System serif", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: center;
+  width: 110px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+  padding-left: 20px; 
+}
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-flex;      
+  align-items: center;       
+  gap: 8px;                 
+}
+
+.nav a img {
+  width: 21px;
+  height: 21px;
+  display: block;
+  object-fit: contain;
+  order: -1; 
+}
+
+.nav a.active {
+  background: #fcecff;
+  padding: 20px 15px;
+  border: 3px solid #c868d8;
+  border-radius: 10px;
+  color: #7C0092;
+  font-weight: 700;
+}
+
+
+/*các nút trên header*/
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  padding: 0 18px;        /* tăng độ rộng đẹp hơn */
+  border-radius: 15px;    /* bo tròn mềm mại hơn */
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  color: inherit;
+  white-space: nowrap;    /* CHỐT: giúp chữ không xuống dòng */
+  transition: all 0.2s ease;
+}
+
+
+.btn.admin {
+  background: #fd9535;
+  color: white;
+  
+}
+
+.btn.login {
+  background: #d9d9d9;
+  color: #333;
+}
+
+.btn.signup {
+  background: #5A33E9;
+  color: white;
+}
+
+.btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}

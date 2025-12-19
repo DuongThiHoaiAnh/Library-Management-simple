@@ -1,0 +1,214 @@
+/* tổng thể*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;   
+  height: auto; 
+}
+
+/* Tổng thể bảng */
+.dashboard-content {
+  padding: 30px 60px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+
+/* Container tổng khung tìm kiếm */
+.borrow-return-filter-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff; 
+  border-radius: 15px;
+
+  margin: 6px auto;  
+  border: 1px solid #cfcfcf;
+  padding: 25px 30px;
+  width: 1155px;
+  height: 91px;
+}
+
+/* Ô tìm kiếm */
+.search-box {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  height: 42px;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 15px;
+  padding: 8px 15px;
+  color: #000000;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+  background: transparent;
+  margin-left: 10px;
+}
+
+/* Bảng yêu cầu mượn trả */
+.table-wrapper {
+  width: 1155px;
+  margin: 20px auto;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  overflow: hidden; 
+}
+
+.table-scroll {
+  max-height: 400px; 
+  overflow-y: auto;  
+}
+
+.borrow-return-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse; 
+  font-size: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  
+}
+
+.borrow-return-table thead {
+  background-color: #F1F1F1; 
+  font-weight: bold;
+  position: sticky;          
+  top: 0;                   
+  z-index: 2; 
+}
+
+.borrow-return-table th, 
+.borrow-return-table td {
+  word-wrap: break-word; 
+  white-space: normal;   
+  text-align: left;   
+  padding: 8px;
+  padding: 14px 16px;
+}
+
+.borrow-return-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.borrow-return-table th {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #d1d1d1; 
+}
+
+.borrow-return-table th:last-child{
+  border-top: none;  
+}
+
+.borrow-return-table tbody tr{
+  border-bottom: 1px solid #d1d1d1; 
+}
+
+.borrow-return-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.borrow-return-table td:nth-last-child(-n+4),
+.borrow-return-table th:nth-last-child(-n+4) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Style chung cho badge */
+.sta {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px; /* bo tròn pill */
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.status {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px; /* bo tròn pill */
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.sta.borrow {
+  background-color: #d9e6ff;  
+  color: #1a4db3;            
+}
+
+.sta.return {
+  background-color: #feffdd;  
+  color: #7d7000;            
+}
+
+.status.pending {
+  background-color: #ffefcc;  
+  color: #a66a00;             
+}
+
+.status.approved {
+  background-color: #d6f5d6;  
+  color: #005c0f;             
+}
+
+.status.rejected {
+  background-color: #ffe0e0;  
+  color: #cc0000;
+}
+
+
+.actions {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+.icon-tick {
+  stroke: #008000; 
+  cursor: pointer;
+}
+
+.icon-x {
+  stroke: #cc0000; 
+  cursor: pointer;
+}
+
+.icon-tick:hover,
+.icon-x:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}

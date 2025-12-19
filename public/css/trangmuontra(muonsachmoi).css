@@ -1,0 +1,42 @@
+/* Header */
+.trang-lch-s-mn-tr .group-19 {
+    width: 190px;
+}
+.trang-lch-s-mn-tr .group-23 {
+    width: 94px;
+}
+.trang-lch-s-mn-tr .text-wrapper-44 {
+    width: 114px;
+}
+/* Body */
+.trang-lch-s-mn-tr .iconstack-io {
+    left: 22px;
+}
+.trang-lch-s-mn-tr .khung-chung-sach-lch {
+    height: 736px;
+}
+.trang-lch-s-mn-tr .text-wrapper-mo-ta {
+    font-family: "Inter-Regular", Helvetica;
+    top: 64px;
+    font-size: 12px;
+    position: absolute;
+    width: 302px;
+}
+.trang-lch-s-mn-tr .group-chung-lenh-dat-cho {
+    top: 92px;
+}
+.trang-lch-s-mn-tr .rectangle-23 {
+    background: linear-gradient(
+        90deg,
+        rgba(81, 65, 255, 1) 0%,
+        rgba(185, 81, 254, 1) 62%,
+        rgba(248, 47, 255, 1) 100%
+    );
+}
+.trang-lch-s-mn-tr .rectangle-23:hover {
+    background: linear-gradient(90deg,
+        rgb(54, 35, 255) 0%,
+        rgb(169, 39, 255) 62%,
+        rgb(247, 0, 255) 100%
+    );
+}

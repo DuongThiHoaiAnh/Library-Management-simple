@@ -1,0 +1,165 @@
+/* Thanh menu trái */
+.sidebar {
+  width: 260px;
+  background: #fff;
+  border-right: 1px solid #eee;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  background: #f39645;
+  border-radius: 25%;
+  position: relative; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.sidebar-text {
+  color: #333;
+}
+
+.sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  color: #444;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+
+
+.sidebar nav a:hover {
+  background: #fff6e6;
+  color: #000000;
+  font-weight: 600;
+}
+
+.sidebar nav a.active{
+  background: #fff6e6;
+  color: #e69215;
+  font-weight: 600;
+}
+
+.icon-img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.icon-img.small {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+.icon-edit-img {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+} 
+
+/* Phần chính bên phải */
+.main {
+  flex: 1;
+  background: #f9f1e4;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header - Thanh trên cùng */
+.header {
+  background: #fff;
+  height: 64px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.header-right {
+  gap: 40px;
+  font-size: 16px;
+  color: #5d5d5d;
+  font-weight: 700;
+
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.admin img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.admin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home {
+  width: auto;
+  padding: 6px 14px;
+  height: 35px;
+  background: #f39645;     
+  color: white; 
+  font-size: 16px;
+  font-weight: 600;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none; 
+  border-radius: 6px; 
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.home:hover {
+  background: #fff6e6; 
+  color: #e69215; 
+  transform: scale(1.04);
+}
+
+

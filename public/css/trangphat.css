@@ -1,0 +1,207 @@
+.trang-pht .group-tach-khoi-sach {
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+.trang-pht .title-khoi-sach {
+    font-family: "Inter", sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.trang-pht .muc-date-phat {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    position: relative;
+    top: 88px;
+}
+.trang-pht .text-wrapper-7 {
+    position: relative;
+    justify-content: left;
+    margin-top: 10px;
+    top: 0;
+}
+.trang-pht .khung-chu-sach-lch {
+    margin: 30px 40px 30px 40px;
+    height: auto;
+    box-sizing: border-box;
+}
+.trang-pht .thanh-toan .khung-chu-sach-lch {
+    margin-left: 10px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.trang-pht .thanh-toan .khung-anh-sach-lch {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px 40px 25px;
+    
+} 
+.trang-pht .text-wrapper-13, 
+.trang-pht .rectangle-12,
+.trang-pht .tra-tre {
+    position: relative;
+    top: 0;
+}
+.trang-pht .text-wrapper-13 {
+    left: 0;
+    justify-content: right;
+}
+.trang-pht .rectangle-12 {
+    left: 0;
+    width: 152px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trang-pht .tra-tre {
+    left: 0;
+    font-size: 16px;
+    font-weight:lighter;
+}
+.trang-pht .rectangle-tong-tien-phat {
+    width: auto;
+    background-color: #ffeeee;
+    padding: 20px 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+    box-shadow: 0px 4px 4px #78787840;
+}
+.trang-pht .text-tong-phat {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 21px;
+}  
+.trang-pht .so-tien-phat {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    color: #c80404;
+}
+.trang-pht .thanh-toan {
+    height: 136px;
+    align-items: center;
+    border-color: white;
+}
+.trang-pht .thanh-toan:hover {
+    border: 1px solid rgb(191 219 254);
+}
+.trang-pht .thanh-toan.active {
+    background-color: #ebebff;
+    border: 1px solid rgb(191 219 254);
+}
+.trang-pht .thanh-toan .image {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+.trang-pht .circle-pick {
+    margin-right: 16px;
+    font-size: 24px;
+    position: relative;
+    margin-right: 15px;
+}
+.trang-pht .thanh-toan .text-wrapper-8 {
+    font-size: 24px;
+    top: 0;
+    position: relative;
+    justify-content: left;
+}
+.trang-pht .thanh-toan .text-wrapper-9 {
+    font-size: 16px;
+    top: 0;
+    position: relative;
+    justify-content: left;
+}
+
+.trang-pht .rectangle-thong-tin-chuyen-khoan {
+    position: relative;
+    background-color: #eef2ff;
+    border-radius: 14px;
+    padding: 30px 20px;
+    box-shadow: 0px 4px 4px #78787840;
+    width: auto;
+    height: auto;
+}
+.trang-pht .title-thong-tin-chuyen-khoan {
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+.trang-pht .body-thong-tin-chuyen-khoan {
+    margin-top: 10px;
+    gap: 34px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    margin-bottom: 10px;
+}
+.trang-pht .body-detail-thong-tin-ck {
+    display: flex;
+    justify-content: space-between;
+}
+.trang-pht .text-detail-ck {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    color: gray;
+}
+.trang-pht .text-info-ck {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+.trang-pht .footer-detail-thong-tin-ck {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid rgb(191 219 254 / var(--tw-border-opacity, 1));
+    padding-top: 15px;
+}
+.trang-pht .text-footer-ck {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.trang-pht .text-footer-info-ck {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(190, 0, 0);
+}
+.trang-pht .rectangle-thanh-toan {
+    position: relative;
+    background-color: #7A4EF3;
+    width: auto;
+    height: 72px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+.trang-pht .rectangle-thanh-toan:hover {
+    background-color: #602bf3;
+    cursor: pointer;
+}
+.trang-pht .img-thanh-toan {
+    margin-right: 15px;
+    width: auto;
+    height: 20px;
+}
+.trang-pht .text-thanh-toan {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}

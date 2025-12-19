@@ -1,0 +1,180 @@
+/* tổng thể*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;   
+  height: auto; 
+}
+
+/* Tổng thể bảng */
+.dashboard-content {
+  padding: 30px 60px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.update-date {
+  display: flex;               
+  align-items: center;         
+  justify-content: flex-end;   
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 30px;
+  gap: 10px;                  
+}
+
+.update-icon {
+  width: 13px;
+  height: 13px;
+  object-fit: contain;
+}
+
+
+/* mấy khung thống kê */
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #c7c7c7; 
+  border-radius: 12px;
+  padding: 20px 24px;
+  width: 245px;
+  height: 133px;
+}
+
+.card .label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.icon-box {
+  width: 70px;
+  height: 70px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  filter: brightness(0) invert(1); 
+}
+
+.icon-box.blue {
+  background: #4977f2; 
+}
+.icon-box.green {
+  background: #3bb273;
+}
+.icon-box.yellow {
+  background: #f3c63f;
+}
+
+
+/* Bảng */
+/* Khung bao bảng */
+.table-wrapper {
+  width: 1155px;
+  margin: 20px auto;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  overflow: hidden; /* Giúp giữ bo tròn & tránh tràn nội dung */
+  background-color: #ffffff;
+}
+
+/* Bảng */
+.table-wrapper {
+  width: 1155px;
+  margin: 20px auto;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  overflow: hidden; 
+}
+
+.user-table {
+  width: 100%;
+  border-collapse: collapse; 
+  font-size: 15px;
+  color: #000;
+  background-color: #fff;
+}
+
+.user-table thead {
+  background-color: #F1F1F1; 
+  font-weight: bold;
+}
+
+.user-table th, .user-table td {
+  text-align: left;
+  padding: 14px 16px;
+}
+
+.user-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.user-table th {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  border-bottom: 1px solid #d1d1d1; 
+}
+
+.user-table tbody tr {
+  border-bottom: 1px solid #d1d1d1; 
+}
+
+.user-table tbody tr:last-child {
+  border-bottom: none; 
+}
+
+.highlight {
+  font-weight: 700;
+}
+
+.user-table td:nth-child(4),
+.user-table th:nth-child(4) {
+  text-align: center;     
+  padding-left: 8px;      
+}
+

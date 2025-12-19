@@ -1,0 +1,306 @@
+/* ======== Tổng thể ======== */
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #F8F9FF;
+}
+
+.page-container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  min-width: 1440px;
+}
+
+
+/* Section Background Gradient */
+.cta-section {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(
+      90deg,
+      #4548FF,   
+      #BA31B2,  
+      #FD4BDD
+  );  
+  color: white;
+  border-radius: 0;
+}
+
+.cta-section h2 {
+  font-size: 47px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.cta-section p {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 40px;
+}
+
+/* Search Box Container */
+.search-box {
+  position: relative;   
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(8px);
+  /* width: fit-content; */
+
+
+  flex-wrap: nowrap;       /* không cho wrap xuống */
+  width: 100%;             /* chiếm toàn bộ vùng cha */
+  max-width: 800px;
+
+  margin: 0 auto;
+}
+
+/* Input Field */
+.search-box input {
+  width: 350px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Dropdown */
+.search-box select {
+  appearance: none;       
+  -webkit-appearance: none;
+  -moz-appearance: none;    
+
+  background: white url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="%23888888" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>') no-repeat right 15px center;
+  background-size: 20px;
+  padding-right: 45px; 
+
+  width: 200px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-btn {
+  padding: 12px 25px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  background: #fd9535;
+  color: white;
+  cursor: pointer;
+  display: flex;             
+  align-items: center;
+  gap: 8px;
+  transition: transform 0.2s ease;
+
+  flex-shrink: 0;
+}
+
+.search-btn:hover {
+  background: #fd902a;  
+  transform: scale(0.95);
+}
+
+.search-icon {
+  width: 18px;  
+  height: 18px;
+  flex-shrink: 0; 
+}
+
+.search-box input,
+.search-box select,
+.search-box button {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+
+/* giới thiệu một số sách */
+.favorite-books {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  margin-bottom: 400px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.section-header h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.section-header p {
+  font-size: 16px;
+  color: #555;
+  margin-top: 5px;
+}
+
+.book-list {
+  row-gap: 80px;
+  column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(275px, 275px));
+  justify-content: start; 
+  row-gap: 80px;
+  column-gap: 20px;
+}
+
+.book-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 100%;
+}
+
+.book-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.book-img img {
+  width: 100%;
+  height: 340px;
+  border-radius: 12px;
+  display: block;
+  margin: 0px auto;
+}
+
+.tag-status-container {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.book-tag,
+.book-status {
+  display: inline-block;
+  padding: 6px 14px;      
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+  background: #eae4ff;
+  color: #22104b;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; 
+}
+
+.book-status {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.purple {
+  background: #fde2f3;
+  color: #9d174d;
+}
+
+
+.book-title {
+  font-size: 18px;
+  margin: 12px 0 4px;
+  font-weight: 600;
+}
+
+.book-author,
+.book-year,
+.book-info {
+  color: #666;
+  font-size: 14px;
+  margin: 2px 0;       
+  line-height: 1.4;   
+}
+
+.book-info {
+  font-size: 13px;
+}
+
+.book-action {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+}
+
+.borrow-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: linear-gradient(90deg, #8A2BE2, #FF00FF);
+  color: white;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.borrow-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.borrow-icon {
+  flex-shrink: 0;
+}
+
+.disabled-btn {
+  flex: 4;
+  font-size: 18px;
+  font-weight: 600;
+  background: #cfcfcf;
+  color: #666;
+  border: none;
+  border-radius: 8px;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.reserve-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #fd9535;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.reserve-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}

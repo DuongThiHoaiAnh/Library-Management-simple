@@ -1,0 +1,335 @@
+/* ======== Header ======== */
+.header {
+  width: 100%;
+  height: 119px;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 25px;
+  box-sizing: border-box;
+  z-index: 2;
+  font-family: Inter, sans-serif;
+}
+
+.max-header {
+  width: 1440px;
+  display: flex;
+}
+
+.header-left,
+.header-right {
+  height: 119px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-left {
+  width: 75%;
+}
+
+.header-right {
+  width: 25%;
+  justify-content: right;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.logo:hover {
+  opacity: 0.9;
+}
+
+.logo-icon {
+  width: 67px;
+  height: 75px;
+  border-radius: 3px;
+}
+
+.logo-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo-text {
+  color: #660095;
+  font-family: "System serif", serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: 700;
+  line-height: 19.6px;
+  text-align: center;
+  width: 110px;
+}
+
+.nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+  padding-left: 38px;
+}
+
+
+
+.nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav a img {
+  width: 21px;
+  height: 21px;
+  display: block;
+  object-fit: contain;
+  order: -1;
+}
+
+.nav a.active {
+  background: #fcecff;
+  padding: 20px 15px;
+  border: 3px solid #c868d8;
+  border-radius: 10px;
+  color: #7C0092;
+  font-weight: 700;
+}
+
+/* == ô phạt và user ===== */
+.header-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.fine-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #ffecec;
+  border: 3px solid #e00000;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e00000;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  width: 220px;
+  box-sizing: border-box;
+  white-space: nowrap;
+  /* tránh bị xuống dòng ngoài ý muốn */
+}
+
+.fine-text .line1,
+.fine-text .line2 {
+  display: block;
+  /* bắt buộc mỗi dòng là một hàng riêng */
+  line-height: 1.2;
+  /* kiểm soát khoảng cách giữa 2 dòng */
+}
+
+.fine-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.fine-box img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.fine-box:hover {
+  transform: translateY(-3px);
+}
+
+/* --- Khối user + mũi tên --- */
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.user-box img {
+  width: 35px;
+  height: 35px;
+  object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* popup user */
+.user-box {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.popup {
+  position: absolute;
+  top: 84px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: none;
+
+  z-index: 3;
+}
+
+.popup-header {
+  background: #f0ebff;
+  display: flex;
+  align-items: center;
+  padding: 22px;
+
+  padding-top: 32px;
+  padding-bottom: 32px;
+  gap: 10px;
+}
+
+.popup-header h3 {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.popup-header p {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+.avatar {
+  background: #6c63ff;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popup-item strong {
+  font-size: 18px;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2px;
+}
+
+.popup-item p {
+  margin-top: 2px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+.popup-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  cursor: pointer;
+  border-bottom: 1px solid #eee;
+
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.popup-item:hover {
+  background: #f9f9f9;
+}
+
+.popup-item .icon-popup {
+  width: 30px;
+  height: 30px;
+  margin-left: 15px;
+}
+
+.logout strong,
+.logout p {
+  color: red;
+}
+
+.popup-item-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.popup-item {
+  cursor: pointer;
+}
+
+.popup-item:hover {
+  background-color: #f5f5f5;
+}
+
+
+
+/* nut thong bao */
+.notification-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.notification-icon svg {
+  width: 35px;
+  height: 35px;
+}
+
+.notification-icon .badge {
+  position: absolute;
+  top: -4px;
+  /* chỉnh vị trí lên/xuống */
+  right: -4px;
+  /* chỉnh vị trí trái/phải */
+  background-color: red;
+  color: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+}
+

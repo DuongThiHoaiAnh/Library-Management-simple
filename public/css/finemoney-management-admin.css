@@ -1,0 +1,181 @@
+/* tổng thể*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  height: auto;
+}
+
+/* Tổng thể bảng */
+.dashboard-content {
+  padding: 30px 60px;
+}
+
+
+.dashboard-header-fine {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 16px;
+  color: #474747;
+  margin-left: 0;
+}
+
+
+/* Bảng yêu cầu mượn trả */
+.table-wrapper {
+  width: 1155px;
+  margin: 20px auto;
+  border: 1px solid #d1d1d1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-scroll {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.finemoney-table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 15px;
+  color: #000000;
+  background-color: #ffffff;
+
+}
+
+.finemoney-table thead {
+  background-color: #F1F1F1;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.finemoney-table th,
+.finemoney-table td {
+  word-wrap: break-word;
+  white-space: normal;
+  text-align: left;
+  padding: 8px;
+  padding: 14px 16px;
+}
+
+.finemoney-table tbody tr:hover {
+  background-color: #fafafa;
+}
+
+.finemoney-table th {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000000;
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.finemoney-table th:last-child {
+  border-top: none;
+}
+
+.finemoney-table tbody tr {
+  border-bottom: 1px solid #d1d1d1;
+}
+
+.finemoney-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.finemoney-table td:nth-last-child(-n+4),
+.finemoney-table th:nth-last-child(-n+4) {
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* Style chung cho badge */
+.sta {
+  display: inline-block;
+  padding: 6px 16px;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  min-width: 100px;
+}
+
+.status {
+  display: inline-block;
+  padding: 9px 10px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  line-height: 1;
+  min-width: 80px;
+  /* margin-left: 46px; */
+  margin-top: 3px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.status.paiding {
+  background-color: #e1ffe1;
+  color: #005c0f;
+}
+
+.status.notyetpaid {
+  background-color: #ffe1e1;
+  color: #ff0000;
+}
+
+.finemoney {
+  font-size: 17px;
+  font-weight: 700px;
+  color: #ff0000;
+}
+
+
+.actions {
+  display: flex;
+  gap: 12px;
+  font-size: 18px;
+  margin-left: 40px;
+}
+
+.icon-tick-fine {
+  stroke: #008000;
+  cursor: pointer;
+  margin-left: 21px;
+}
+
+.icon-x {
+  stroke: #cc0000;
+  cursor: pointer;
+}
+
+.icon-tick:hover,
+.icon-x:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
