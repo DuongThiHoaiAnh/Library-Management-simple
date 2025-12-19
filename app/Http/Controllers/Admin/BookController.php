@@ -37,7 +37,7 @@ class BookController extends Controller
                 'idDanhMuc' => 'required|exists:danh_muc,idDanhMuc',
                 'moTa' => 'nullable|string',
                 'vitri' => 'nullable|string|max:100',
-                'anhBia' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+                'anhBia' => 'nullable|image|mimes:jpg,jpeg,png,jfif,webp',
             ]);
 
             if ($validator->fails()) {
@@ -98,7 +98,7 @@ class BookController extends Controller
             }
 
 
-            
+
             $book->save();
 
             app(\App\Http\Controllers\Admin\BorrowReturnController::class)
