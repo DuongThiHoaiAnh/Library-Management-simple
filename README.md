@@ -49,7 +49,7 @@ Dự án được phát triển trong khuôn khổ môn học **Lập trình PHP
 #### 🔹 Bước 1: Clone dự án về
 
 ```bash
-git clone https://github.com/DuongThiHoaiAnh/Library-Management-Gr6.git
+git clone https://github.com/DuongThiHoaiAnh/Library-Management-simple.git
 
 cd <library-management>
 ````
@@ -146,5 +146,5 @@ php artisan serve
 - 49.01.103.065 - Đặng Minh Phúc
 
 
-# update
-- Link deploy render : https://library-management-simple.onrender.com
+# Update
+- Link Deploy Render : `https://library-management-simple.onrender.com`
