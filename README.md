@@ -141,9 +141,9 @@ php artisan serve
 ## Thành viên nhóm
 
 - 49.01.103.002 - Dương Thị Hoài Anh
+- 49.01.103.065 - Đặng Minh Phúc
 - 49.01.103.036 - Hứa Ngọc Bảo Khanh
 - 49.01.103.077 - Châu Hoàn Thiện
-- 49.01.103.065 - Đặng Minh Phúc
 
 
 # Update

@@ -27,22 +27,22 @@
   <section class="stats-container">
     <div class="stat-box-tongsosach">
       <div class="stat-icon"><img src="{{ asset('images/iconstack.io - (Book 2)-white.png') }}" alt=""></div>
-      <div class="stat-number">15,420</div>
+      <div class="stat-number">~</div>
       <div class="stat-title">Tổng số sách</div>
     </div>
     <div class="stat-box-docgiadangky">
       <div class="stat-icon"><img src="{{ asset('images/iconstack.io - (User Circle)-bold-white.png') }}" alt=""></div>
-      <div class="stat-number">2,847</div>
+      <div class="stat-number">~</div>
       <div class="stat-title">Độc giả đăng ký</div>
     </div>
     <div class="stat-box-luotmuonhomnay">
       <div class="stat-icon"><img src="{{ asset('images/iconstack.io - (Book)-white.png') }}" alt=""></div>
-      <div class="stat-number">1,234</div>
+      <div class="stat-number">~</div>
       <div class="stat-title">Lượt mượn hôm nay</div>
     </div>
     <div class="stat-box-sachdangmuon">
       <div class="stat-icon"><img src="{{ asset('images/iconstack.io - (Calendar)-bold-white.png') }}" alt=""></div>
-      <div class="stat-number">89</div>
+      <div class="stat-number">~</div>
       <div class="stat-title">Sách đang mượn</div>
     </div>
   </section>
@@ -56,22 +56,22 @@
       <div class="feature-box">
         <div class="feature-icon"><img src="{{ asset('images/iconstack.io - (Search)-thin-white.png') }}"></div>
         <div class="feature-title">Tra cứu sách</div>
-        <div class="feature-desc">Tìm kiếm sách theo tên, tác giả, thể loại một cách nhanh chóng và chính xác</div>
+        <div class="feature-desc">~</div>
       </div>
       <div class="feature-box">
         <div class="feature-icon"><img src="{{ asset('images/iconstack.io - (Book 2)-thin-white.png') }}"></div>
         <div class="feature-title">Mượn/Trả sách</div>
-        <div class="feature-desc">Quản lý việc mượn và trả sách dễ dàng, theo dõi hạn trả</div>
+        <div class="feature-desc">~</div>
       </div>
       <div class="feature-box">
         <div class="feature-icon"><img src="{{ asset('images/iconstack.io - (Bookmark)-thin-white.png') }}"></div>
         <div class="feature-title">Đặt chỗ</div>
-        <div class="feature-desc">Đặt trước những cuốn sách yêu thích khi chúng đang được đọc</div>
+        <div class="feature-desc">~</div>
       </div>
       <div class="feature-box">
         <div class="feature-icon"><img src="{{ asset('images/iconstack.io - (History)-thin-white.png') }}"></div>
         <div class="feature-title">Lịch sử</div>
-        <div class="feature-desc">Xem lịch sử mượn trả và theo dõi tình trạng</div>
+        <div class="feature-desc">~</div>
       </div>
     </div>
   </section>
