@@ -16,11 +16,13 @@ class SearchBookController extends Controller
 
         if ($request->filled('q')) {
             $search = $request->q;
-            $query->where(function($q) use ($search) {
-                $q->where('sach.tenSach', 'like', "%{$search}%")
-                  ->orWhere('sach.tacGia', 'like', "%{$search}%");
+
+            $query->where(function ($q) use ($search) {
+                $q->whereRaw("sach.tenSach LIKE N'%' + ? + '%'", [$search])
+                    ->orWhereRaw("sach.tacGia LIKE N'%' + ? + '%'", [$search]);
             });
         }
+
 
         if ($request->filled('category')) {
             $query->where('sach.idDanhMuc', $request->category);
