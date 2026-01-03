@@ -18,11 +18,10 @@ class SearchBookController extends Controller
             $search = $request->q;
 
             $query->where(function ($q) use ($search) {
-                $q->whereRaw("sach.tenSach LIKE N'%' + ? + '%'", [$search])
-                    ->orWhereRaw("sach.tacGia LIKE N'%' + ? + '%'", [$search]);
+                $q->where('sach.tenSach', 'ILIKE', "%{$search}%")
+                    ->orWhere('sach.tacGia', 'ILIKE', "%{$search}%");
             });
         }
-
 
         if ($request->filled('category')) {
             $query->where('sach.idDanhMuc', $request->category);
